@@ -19,6 +19,37 @@
     <title>GitHub Finder</title>
   </head>
   <body>
+    <div id="page_container">
+      <nav class="nav navbar-dark bg-primary mb-3">
+        <div class="container">
+          <a href="#" class="navbar-brand">GitHub Finder</a>
+        </div>
+      </nav>
+
+      <div class="container searchContainer">
+        <div class="search card card-body">
+          <h1>Search GitHub Users</h1>
+          <p class="lead">
+            Enter a username to fetch a user profile and repos.
+          </p>
+          <input
+            type="text"
+            id="serchUser"
+            class="from-control"
+            placeholder="GitHub Username.."
+          />
+          <br />
+          <button id="searchBtn" class="btn btn-primary">Search</button>
+        </div>
+        <br />
+        <div id="profile"></div>
+      </div>
+
+      <footer class="text-center bg-light mt-5 p-3 footer">
+        GitHub Finder &copy;
+      </footer>
+    </div>
+
     <!-- Bootstrap Script -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -36,6 +67,7 @@
       crossorigin="anonymous"
     ></script>
     <!-- Main Script -->
+    <script src="js/ui.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
