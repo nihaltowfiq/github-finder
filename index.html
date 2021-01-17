@@ -19,36 +19,40 @@
     <title>GitHub Finder</title>
   </head>
   <body>
-    <div id="page_container">
-      <nav class="nav navbar-dark bg-primary mb-3">
-        <div class="container">
-          <a href="#" class="navbar-brand">GitHub Finder</a>
-        </div>
-      </nav>
+    <nav class="nav navbar-dark bg-primary mb-3">
+      <div class="container">
+        <a href="#" class="navbar-brand">GitHub Finder</a>
+      </div>
+    </nav>
 
-      <div class="container searchContainer">
-        <div class="search card card-body">
-          <h1>Search GitHub Users</h1>
-          <p class="lead">
-            Enter a username to fetch a user profile and repos.
-          </p>
+    <div class="container searchContainer">
+      <div class="search card card-body">
+        <h1>Search GitHub Users</h1>
+        <p class="lead">Enter a username to fetch a user profile and repos.</p>
+        <form>
           <input
             type="text"
-            id="serchUser"
-            class="from-control"
+            id="searchUser"
+            class="form-control"
             placeholder="GitHub Username.."
           />
           <br />
-          <button id="searchBtn" class="btn btn-primary">Search</button>
-        </div>
-        <br />
-        <div id="profile"></div>
+          <button
+            type="submit"
+            id="searchBtn"
+            class="btn btn-primary form-control"
+          >
+            Search
+          </button>
+        </form>
       </div>
-
-      <footer class="text-center bg-light mt-5 p-3 footer">
-        GitHub Finder &copy;
-      </footer>
+      <br />
+      <div id="profile"></div>
     </div>
+
+    <footer class="text-center bg-light mt-5 p-3 footer">
+      GitHub Finder &copy;
+    </footer>
 
     <!-- Bootstrap Script -->
     <script
