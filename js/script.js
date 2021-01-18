@@ -16,7 +16,6 @@ searchBtn.addEventListener("click", (e) => {
         } else {
           // show profile
           ui.showProfile(data);
-          // ui.showAlert("User Found!", "alert alert-success");
         }
       });
   } else {
